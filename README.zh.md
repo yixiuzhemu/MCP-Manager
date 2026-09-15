@@ -4,7 +4,11 @@
 
 `@mcp-manager/mcp-manager` —— 面向 [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)（dsh，基于 [Cordis](https://cordis.js.org)）的**双面 Model Context Protocol 管理插件**。单包、双入口、一行组合：宿主侧监管任意数量的 MCP 服务器，浏览器侧呈现服务管理面板与 JSON 配置编辑器。
 
+![img_1.png](img_1.png)
 ![img.png](img.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
 
 ## 功能特性
 
