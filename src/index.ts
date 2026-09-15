@@ -11,7 +11,7 @@
  * single-instance mcp-client plugin does. Disposal stops the document
  * watcher, quiesces the reconcile chain, then disconnects every live server.
  *
- * @module @mcp-manger/mcp-manager
+ * @module @mcp-manager/mcp-manager
  */
 
 import type { Context } from '@deepseek-ai/cordis'

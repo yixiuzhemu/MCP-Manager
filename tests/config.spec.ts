@@ -5,8 +5,8 @@
  * schema's defaults and the two transport branches of each projection.
  */
 import { describe, expect, it } from 'vitest'
-import { RECONNECT_DEFAULTS } from '@mcp-manger/mcp-manager/src/connection/index.ts'
-import type { ResolvedReconnectPolicy } from '@mcp-manger/mcp-manager/src/connection/index.ts'
+import { RECONNECT_DEFAULTS } from '@mcp-manager/mcp-manager/src/connection/index.ts'
+import type { ResolvedReconnectPolicy } from '@mcp-manager/mcp-manager/src/connection/index.ts'
 import {
   buildClientConfig,
   DEFAULT_TOOL_CALL_TIMEOUT_MS,

@@ -7,7 +7,7 @@ import { Context } from '@deepseek-ai/cordis'
 import SystemPrompt from '@deepseek-ai/dsh-system-prompt'
 import ToolRuntime from '@deepseek-ai/dsh-tools'
 import { createScope } from '@deepseek-ai/dsh-scope'
-import type { Config } from '@mcp-manger/mcp-manager/src/connection/index.ts'
+import type { Config } from '@mcp-manager/mcp-manager/src/connection/index.ts'
 
 // ---- Mock MCP SDK ----
 
@@ -55,7 +55,7 @@ vi.mock('@modelcontextprotocol/sdk/client/streamableHttp.js', () => ({
 
 // vi.mock is hoisted above static imports, so the module under test sees the
 // mocked SDK even through a static import.
-import { apply, name, inject, Config as ConfigSchema } from '@mcp-manger/mcp-manager/src/connection/index.ts'
+import { apply, name, inject, Config as ConfigSchema } from '@mcp-manager/mcp-manager/src/connection/index.ts'
 
 // ---- Helpers ----
 

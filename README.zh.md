@@ -1,8 +1,8 @@
-# MCP-Manger
+# MCP-Manager
 
 [English](README.md) | 中文
 
-`@mcp-manger/mcp-manager` —— 面向 [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)（dsh，基于 [Cordis](https://cordis.js.org)）的**双面 Model Context Protocol 管理插件**。单包、双入口、一行组合：宿主侧监管任意数量的 MCP 服务器，浏览器侧呈现服务管理面板与 JSON 配置编辑器。
+`@mcp-manager/mcp-manager` —— 面向 [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)（dsh，基于 [Cordis](https://cordis.js.org)）的**双面 Model Context Protocol 管理插件**。单包、双入口、一行组合：宿主侧监管任意数量的 MCP 服务器，浏览器侧呈现服务管理面板与 JSON 配置编辑器。
 以配置文件的方式完成MCP-Server的配置（类似WorkBuddy的方式）
 ![img.png](img.png)
 
@@ -13,7 +13,7 @@
 ## 快速开始
 
 ```sh
-dsh plugin --profile web add @mcp-manger/mcp-manager
+dsh plugin --profile web add @mcp-manager/mcp-manager
 ```
 
 重启 `dsh web`，打开 **设置 → MCP**。安装时自动插入组合行，面板作为独立侧边栏条目出现。

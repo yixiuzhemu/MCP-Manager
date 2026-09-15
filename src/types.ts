@@ -3,7 +3,7 @@
  * one `mcp` Remote read reports, and the Cordis event that announces a change
  * so configuration surfaces refresh without polling.
  *
- * @module @mcp-manger/mcp-manager/types
+ * @module @mcp-manager/mcp-manager/types
  */
 
 declare module '@deepseek-ai/cordis' {

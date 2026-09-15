@@ -12,7 +12,7 @@
 
 import { describe, expect, it } from 'vitest'
 import Loader from '@deepseek-ai/cordis-plugin-loader'
-import * as mcpClient from '@mcp-manger/mcp-manager/src/connection/index.ts'
+import * as mcpClient from '@mcp-manager/mcp-manager/src/connection/index.ts'
 
 describe('connection plugin real-load-path guard', () => {
   it('has no default export and keeps name/inject/Config through unwrapExports', () => {

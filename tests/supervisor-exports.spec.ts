@@ -1,7 +1,7 @@
 /**
  * Public-surface guard for the connection supervisor re-exports.
  *
- * The host registry (`@mcp-manger/mcp-manager`'s `.` face) drives many servers
+ * The host registry (`@mcp-manager/mcp-manager`'s `.` face) drives many servers
  * from a settings section and reuses the connection layer's lifecycle verbatim.
  * That reuse depends on `startConnection`, `resolveReconnectPolicy`,
  * `RECONNECT_DEFAULTS`, and `SERVER_NAME_PATTERN` being reachable from the
@@ -15,7 +15,7 @@ import {
   resolveReconnectPolicy,
   SERVER_NAME_PATTERN,
   startConnection,
-} from '@mcp-manger/mcp-manager/src/connection/index.ts'
+} from '@mcp-manager/mcp-manager/src/connection/index.ts'
 
 describe('dsh-mcp-client supervisor re-exports', () => {
   it('exposes the connection supervisor entry points from the connection barrel', () => {

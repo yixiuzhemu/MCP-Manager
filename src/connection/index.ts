@@ -10,7 +10,7 @@
  * disposing the old instance and creating a new one; identical `serverName`
  * reproduces identical public tool names.
  *
- * @module @mcp-manger/mcp-manager/connection
+ * @module @mcp-manager/mcp-manager/connection
  */
 
 import type { Context } from '@deepseek-ai/cordis'

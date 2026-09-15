@@ -1,7 +1,7 @@
 {
-  "name": "@mcp-manger/mcp-manager",
+  "name": "@mcp-manager/mcp-manager",
   "description": "Dual-face MCP plugin for deepseek-harness: the host half supervises MCP servers from one `mcp` settings section and exposes the `mcp` Remote namespace; the client half renders the MCP service panel and its JSON configuration editor",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "license": "MIT",
   "keywords": [
     "deepseek",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yixiuzhemu/MCP-Manger.git"
+    "url": "git+https://github.com/yixiuzhemu/MCP-Manager.git"
   },
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",

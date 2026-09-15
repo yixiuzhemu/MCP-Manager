@@ -6,7 +6,7 @@
  * interleave two diffs; one server's failure is contained and never fails the
  * whole section.
  *
- * @module @mcp-manger/mcp-manager/supervisor
+ * @module @mcp-manager/mcp-manager/supervisor
  */
 
 import type { Context } from '@deepseek-ai/cordis'

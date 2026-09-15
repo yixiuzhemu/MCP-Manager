@@ -11,9 +11,9 @@ import SystemPrompt from '@deepseek-ai/dsh-system-prompt'
 import ToolRuntime from '@deepseek-ai/dsh-tools'
 import type { JsonValue } from '@deepseek-ai/dsh-util-values'
 import type { PostToolDecision } from '@deepseek-ai/dsh-tools'
-import { publicToolName, syncTools, type ToolBridgeOptions } from '@mcp-manger/mcp-manager/src/connection/tools.ts'
-import { createTransport } from '@mcp-manger/mcp-manager/src/connection/transport.ts'
-import type { Config } from '@mcp-manger/mcp-manager/src/connection/index.ts'
+import { publicToolName, syncTools, type ToolBridgeOptions } from '@mcp-manager/mcp-manager/src/connection/tools.ts'
+import { createTransport } from '@mcp-manager/mcp-manager/src/connection/transport.ts'
+import type { Config } from '@mcp-manager/mcp-manager/src/connection/index.ts'
 
 const testToolSignal = new AbortController().signal
 

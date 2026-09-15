@@ -1,5 +1,5 @@
 /**
- * Browser client bundle for the MCP-Manger plugin, mirroring the DeepSeek
+ * Browser client bundle for the MCP-Manager plugin, mirroring the DeepSeek
  * Harness client preset for an external package: a closure-factory artifact
  * that calls window.__ModuleLoader__.load({ id, factory }) and resolves
  * externals through the injected require (loader module table). CSS Modules
@@ -8,14 +8,14 @@
  * tag at factory execution (the loader removes plugin-owned tags on unload).
  *
  * scripts/preflight.mjs asserts the emitted client/client.js starts with the
- * exact `window.__ModuleLoader__.load({ id: "@mcp-manger/mcp-manager"` prefix.
+ * exact `window.__ModuleLoader__.load({ id: "@mcp-manager/mcp-manager"` prefix.
  */
 import { readFile } from 'node:fs/promises'
 import { basename, dirname, relative, resolve as resolvePath } from 'node:path'
 import { defineConfig } from 'tsdown'
 import { transform } from 'lightningcss'
 
-const id = '@mcp-manger/mcp-manager'
+const id = '@mcp-manager/mcp-manager'
 
 /**
  * Externals resolved from the loader module table at runtime. The dsh client

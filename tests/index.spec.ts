@@ -9,7 +9,7 @@ import { Context } from '@deepseek-ai/cordis'
 import SystemPrompt from '@deepseek-ai/dsh-system-prompt'
 import ToolRuntime from '@deepseek-ai/dsh-tools'
 import { remoteMethods, RemoteError } from '@deepseek-ai/dsh-typert-protocol'
-import type { ConnectionHandle, ConnectionOutcome } from '@mcp-manger/mcp-manager/src/connection/index.ts'
+import type { ConnectionHandle, ConnectionOutcome } from '@mcp-manager/mcp-manager/src/connection/index.ts'
 import { MemorySettings } from './support/memory-settings.ts'
 
 /** One mocked connection and the two facts a wiring test asserts on. */
@@ -27,10 +27,10 @@ const { mockStartConnection, connections } = vi.hoisted(() => {
   return { mockStartConnection, connections }
 })
 
-vi.mock('@mcp-manger/mcp-manager/src/connection/index.ts', async (importOriginal) => {
+vi.mock('@mcp-manager/mcp-manager/src/connection/index.ts', async (importOriginal) => {
   // Keep the real config schema, policy resolver, and serverName grammar; swap
   // only the connection starter so no MCP transport is ever spawned.
-  const actual = await importOriginal<typeof import('@mcp-manger/mcp-manager/src/connection/index.ts')>()
+  const actual = await importOriginal<typeof import('@mcp-manager/mcp-manager/src/connection/index.ts')>()
   return { ...actual, startConnection: mockStartConnection }
 })
 

@@ -24,9 +24,9 @@ import SystemPrompt from '@deepseek-ai/dsh-system-prompt'
 import ToolRuntime from '@deepseek-ai/dsh-tools'
 import { ToolCallId, LlmAdapter, LlmRuntime } from '@deepseek-ai/dsh-llm'
 import type { GenerateOptions, LlmResolvedModelInfo, StreamChunk } from '@deepseek-ai/dsh-llm'
-import { apply } from '@mcp-manger/mcp-manager/src/connection/index.ts'
-import { publicToolName } from '@mcp-manger/mcp-manager/src/connection/tools.ts'
-import type { Config } from '@mcp-manger/mcp-manager/src/connection/index.ts'
+import { apply } from '@mcp-manager/mcp-manager/src/connection/index.ts'
+import { publicToolName } from '@mcp-manager/mcp-manager/src/connection/tools.ts'
+import type { Config } from '@mcp-manager/mcp-manager/src/connection/index.ts'
 
 const testToolSignal = new AbortController().signal
 

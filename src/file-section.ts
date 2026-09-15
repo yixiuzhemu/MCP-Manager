@@ -6,7 +6,7 @@
  * as the editor's stale-write guard, and a polling watcher so an external
  * hand-edit reaches the supervisor without a restart.
  *
- * @module @mcp-manger/mcp-manager/file-section
+ * @module @mcp-manager/mcp-manager/file-section
  */
 
 import { watchFile, unwatchFile } from 'node:fs'

@@ -8,7 +8,7 @@
  * LLM adapters fail on a missing key: connecting with an absent secret would
  * authenticate as some unrelated ambient identity instead of surfacing the gap.
  *
- * @module @mcp-manger/mcp-manager/credentials
+ * @module @mcp-manager/mcp-manager/credentials
  */
 
 import { createHash } from 'node:crypto'

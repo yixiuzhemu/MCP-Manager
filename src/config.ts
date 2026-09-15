@@ -9,7 +9,7 @@
  * stored in `settings.yaml`, so no secret value is ever materialized into the
  * settings document. The `servers` dict key IS the mcp-client `serverName`.
  *
- * @module @mcp-manger/mcp-manager/config
+ * @module @mcp-manager/mcp-manager/config
  */
 
 import z from '@deepseek-ai/schemastery'

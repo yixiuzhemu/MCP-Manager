@@ -6,7 +6,7 @@
 
 - insert:
     - id: mcp-pagination-cycle
-      name: '@mcp-manger/mcp-manager/src/connection/index.ts'
+      name: '@mcp-manager/mcp-manager/src/connection/index.ts'
       config:
         transport: stdio
         serverName: pagination-cycle

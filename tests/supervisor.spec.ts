@@ -11,7 +11,7 @@ import SystemPrompt from '@deepseek-ai/dsh-system-prompt'
 import ToolRuntime from '@deepseek-ai/dsh-tools'
 import { credentialRef } from '@deepseek-ai/dsh-credentials'
 import type { CredentialRef, ResolvedCredential } from '@deepseek-ai/dsh-credentials'
-import type { ConnectionHandle, ConnectionOutcome } from '@mcp-manger/mcp-manager/src/connection/index.ts'
+import type { ConnectionHandle, ConnectionOutcome } from '@mcp-manager/mcp-manager/src/connection/index.ts'
 import { MemoryCredentials } from './support/memory-credentials.ts'
 
 /** One mocked connection and the levers a test pulls on it. */
@@ -32,10 +32,10 @@ const { mockStartConnection, handles } = vi.hoisted(() => {
   return { mockStartConnection, handles }
 })
 
-vi.mock('@mcp-manger/mcp-manager/src/connection/index.ts', async (importOriginal) => {
+vi.mock('@mcp-manager/mcp-manager/src/connection/index.ts', async (importOriginal) => {
   // Keep the real schema, policy resolver, and name grammar; swap only the
   // connection starter so no MCP transport is ever spawned.
-  const actual = await importOriginal<typeof import('@mcp-manger/mcp-manager/src/connection/index.ts')>()
+  const actual = await importOriginal<typeof import('@mcp-manager/mcp-manager/src/connection/index.ts')>()
   return { ...actual, startConnection: mockStartConnection }
 })
 
