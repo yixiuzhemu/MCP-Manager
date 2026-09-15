@@ -4,7 +4,11 @@ English | [中文](README.zh.md)
 
 `@mcp-manager/mcp-manager` — a **dual-face Model Context Protocol manager plugin** for [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) (dsh, built on [Cordis](https://cordis.js.org)). Single package, two entry points, one composition row: the Host half supervises any number of MCP servers, while the browser half renders a service management panel and a JSON configuration editor.
 
+![img_1.png](img_1.png)
 ![img.png](img.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
 
 ## Features
 
