@@ -231,6 +231,26 @@ export class McpRegistry extends TypertRemoteService {
     await this.supervisor.awaitConnections()
     return this.status()
   }
+
+  /**
+   * Server-side HTTP proxy for the MCP market. The browser client cannot reach
+   * external APIs directly because the Electron origin (`dsh-app://app`) is
+   * blocked by CORS; this method runs in Node.js where CORS does not apply.
+   * @param url - the fully-qualified URL to fetch.
+   * @returns the response body as a UTF-8 string.
+   * @throws RemoteError when the request fails or returns a non-2xx status.
+   */
+  @Remote
+  async fetchMarket(url: string): Promise<string> {
+    const response = await fetch(url, {
+      headers: { Accept: 'application/json' },
+      signal: AbortSignal.timeout(15_000),
+    })
+    if (!response.ok) {
+      throw new RemoteError('mcp/rejected', `market fetch failed: HTTP ${response.status} ${response.statusText}`, {})
+    }
+    return response.text()
+  }
 }
 
 export default McpRegistry
